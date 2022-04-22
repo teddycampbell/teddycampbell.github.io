@@ -124,6 +124,7 @@ hr {
 	height: 1px;
 	background: #EEEEEE;
 	clear: both;
+	width: 300px;
 }
 
 /* Typography */
@@ -207,7 +208,7 @@ header .logo {
 	margin-top: 0;
 	position: absolute;
 	top: -10px;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 header .mainNav {
 	top: 0px;
@@ -288,7 +289,13 @@ header .mobileToggle {
 /* Hero One */
 
 #hero {
-background: #001F3F;
+
+background-image: url("small-engine-repair-training.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  box-shadow: inset 0 0 0 1000px rgba(0,31,63,.9);
+background-color: #001F3F;
 	padding: 200px 0 120px 0;
 	text-align: center;
 }
@@ -365,12 +372,13 @@ background: #001F3F;
 /* Work Section */
 
 #work {
-	background: #F4F4F4;
+	background: #FFFFFF;
 	padding: 120px 0;
 	cursor: pointer;
 }
 #work .work {
 	position: relative;
+	
 }
 #work .work p {
 	text-align: center;
@@ -378,9 +386,11 @@ background: #001F3F;
 }
 #work .work h4 {
 	color: #FF4136;
+
 }
 #work .work-overlay {
 	color: #fff;
+	background-color: rgba(0,31,63,.7);
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -390,12 +400,12 @@ background: #001F3F;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	width: 250px;
 	height: auto;
 	padding: 10px;
 }
 #work .work .work-overlay {
-	opacity: 0;
+	opacity: .9;
 	transition: all .4s ease-in-out;
 }
 #work .work:hover .work-overlay {
@@ -404,6 +414,7 @@ background: #001F3F;
 }
 #work .work {
 	transition: all .4s ease-in-out;
+	
 }
 #work .work:hover {
 	transform: scale(1.05);
@@ -416,7 +427,7 @@ background: #001F3F;
 /* Services Section */
 
 #services {
-	background: #FFFFFF;
+	background: #F4F4F4;
 	padding: 120px 0;
 }
 .progressBar {
@@ -672,7 +683,7 @@ footer ul li {
   <!-- Header & Navigation -->
 <header>
   <div class="container">
-    <div class="logo">Logo</div>
+    <div class="logo">Warren's Engines</div>
     <div class="mainNav">
       <div class="mobileToggle"> <span></span> <span></span> <span></span> </div>
       <nav>
@@ -692,13 +703,13 @@ footer ul li {
 <!-- Header & Navigation End --> 
 
 <!-- Hero -->
-
+s
 <section id="hero">
   <div class="container">
-    <h2><span class="first" style="opacity: 1;">Warren's</span> <span class="white first" style="opacity: 1;">Small Engine & More</span> <span class="first" style="opacity: 1;">Repair Services</span></h2>
-    <p class="second" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Pumps, Hydraulics, Weed Eaters, Lawn Mowers, Go-Karts,</br>Small Diesel Engines & More!</p>
-    <a href="#about" class="smoothscroll">
-    <div class="button second" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Find out more</div>
+    <h2><span class="first" style="opacity: 1;"><strong>Warren's</strong></span> <span class="white first" style="opacity: 1;">Small Engine & more</span> <span class="first" style="opacity: 1;"><strong>Repair Services</strong></span></h2>
+    <p class="second" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Pumps, Hydraulics, Weed Eaters, Lawn Mowers, Pressure Washers, Compressors, Blowers,</br>Small Diesel Engines & More!</p>
+    <a href="#contact" class="smoothscroll">
+    <div class="button second" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Schedule Service</div>
     </a> </div>
 </section>
 
@@ -753,72 +764,72 @@ footer ul li {
   <div class="container">
     <div class="row">
       <h2 class="center">Work</h2>
-      <p class="center padDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p class="center padDown">At Warren's Small Engine & More, We specialize in Small Engines of every kind. Whether your lawn equipment needs repair ASAP, or your generator is having problems, we can handle all of your small engine repair needs!</p>
     </div>
     <div class="row">
       <div class="three col">
-        <div class="work"> <img src="small-engine-repair-training.jpg" alt="Work One">
+        <div class="work"> <img style = "height: 200px; width: 250px"src="image_26968.jpg" alt="Pumps">
           <div class="work-overlay">
-            <h4>Work One</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h4>Pumps</h4>
+            <p>Pool Pumps, Vacuum Pumps, Utility Pumps</p>
           </div>
         </div>
       </div>
       <div class="three col">
-        <div class="work"> <img src="small-engine-repair-training.jpg" alt="Work Two">
+        <div class="work"> <img style = "height: 200px; width: 250px"src="hydraulic.jpg" alt="Hydraulics">
           <div class="work-overlay">
-            <h4>Work Two</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h4>Hydraulics</h4>
+            <p>Hydraulic Power Units, Motors, Lifts</p>
           </div>
         </div>
       </div>
       <div class="three col">
-        <div class="work"> <img src="small-engine-repair-training.jpg" alt="Work Three">
+        <div class="work"> <img style = "height: 200px; width: 250px"src="Stihl-FS-91-R-String-Trimmer.jpg" alt="Weed Eaters">
           <div class="work-overlay">
-            <h4>Work Three</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h4>Weed Eaters</h4>
+            <p>Small Engine Weed Eaters</p>
           </div>
         </div>
       </div>
       <div class="three col">
-        <div class="work"> <img src="small-engine-repair-training.jpg" alt="Work Four">
+        <div class="work"> <img style = "height: 200px; width: 250px"src="Types-of-Lawn-Mower-Engines.jpg" alt="Lawn Mowers">
           <div class="work-overlay">
-            <h4>Work Four</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h4>Lawn Mowers</h4>
+            <p>Lawn Mower Engines</p>
           </div>
         </div>
       </div>
     </div>
     <div class="row" style="margin-top: 35px;">
       <div class="three col">
-        <div class="work"> <img src="small-engine-repair-training.jpg" alt="Work Five">
+        <div class="work"> <img style = "height: 200px; width: 250px"src="honda-pressure-washer-engine.jpeg" alt="Pressure Washers">
           <div class="work-overlay">
-            <h4>Work Five</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h4>Pressure Washer</h4>
+            <p>Pressure Washer Engines</p>
           </div>
         </div>
       </div>
       <div class="three col">
-        <div class="work"> <img src="small-engine-repair-training.jpg" alt="Work Six">
+        <div class="work"> <img style = "height: 200px; width: 250px"src="generator.jpeg" alt="Compressors">
           <div class="work-overlay">
-            <h4>Work Six</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h4>Generators</h4>
+            <p>Gas Powered Generator Engines</p>
           </div>
         </div>
       </div>
       <div class="three col">
-        <div class="work"> <img src="small-engine-repair-training.jpg" alt="Work Seven">
+        <div class="work"> <img style = "height: 200px; width: 250px"src="small-engine-repair-training.jpg" alt="Blowers">
           <div class="work-overlay">
-            <h4>Work Seven</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h4>Blowers</h4>
+            <p>Air Blowers, Leaf Blowers</p>
           </div>
         </div>
       </div>
       <div class="three col">
-        <div class="work"> <img src="small-engine-repair-training.jpg" alt="Work Eight">
+        <div class="work"> <img style = "height: 200px; width: 250px"src="chainsaw.jpg" alt="go-kart">
           <div class="work-overlay">
-            <h4>Work Eight</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h4>Any Small Engine!</h4>
+            <p>Go-Karts, Chainsaws, Generators</p>
           </div>
         </div>
       </div>
@@ -833,54 +844,31 @@ footer ul li {
   <div class="container">
     <div class="row">
       <h2 class="center">Services</h2>
-      <p class="center padDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p class="center padDown">Schedule a repair to get your small engines back up and running Today!</p>
     </div>
     <div class="row">
       <div class="four col">
-        <h3>Design</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+        <h3>On-Site Repair</h3>
+        <p>Schedule a repair with us today, and we will travel to your location to repair the small engine on the spot! </p>
       </div>
       <div class="four col">
-        <h3>Development</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+        <h3>24/7 Emergency Repair</h3>
+        <p>We understand when you need your tools to be working as soon as possible. That's why we offer the ability to call anytime to get your repairs scheduled and completed to get you back to work!</p>
       </div>
       <div class="four col">
-        <h3>Marketing</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+        <h3>Drop Off</h3>
+        <p>Drop your small engine off at the shop, and we'll contact you when the repair has been made and the engine is ready for pickup!</p>
       </div>
     </div>
     <div class="row">
       <div class="eight col">
-        <h3>Our Skills</h3>
-        <div class="progressBar">
-          <h4>HTML5</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-90"></div>
-          </div>
-        </div>
-        <div class="progressBar">
-          <h4>CSS3</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-80"></div>
-          </div>
-        </div>
-        <div class="progressBar">
-          <h4>Jquery</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-30"></div>
-          </div>
-        </div>
-        <div class="progressBar">
-          <h4>WordPress</h4>
-          <div class="progressBarContainer">
-            <div class="progressBarValue value-70"></div>
-          </div>
-        </div>
+        <h3>Location</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.526472429999!2d-95.45689328488947!3d29.849087181953767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c63d248e1d9f%3A0x494e0fafd7795946!2s5713%20Balbo%20St%2C%20Houston%2C%20TX%2077091!5e0!3m2!1sen!2sus!4v1650552888422!5m2!1sen!2sus" width="100%" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="four col">
-        <h4>Random Title</h4>
-        <p>Lorem ipsum dolor sit amet, enim soluta consectetur adipisicing elit. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis in quia eum autem. Enim soluta consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet, enim soluta consectetur adipisicing elit. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis in quia eum autem.</p>
+        <h4>Pickup & Delivery</h4>
+        <p>For those special circumstances where you can't make it to the shop and your repair is not possible in a day, we'll come pick up your small engine and contact you when the repair is completed.</p>
+        <p>We understand hardwork, and sometimes you just can't leave the job site. We'll deliver your small engine repair to your location as soon as the repair is completed! </p>
       </div>
     </div>
   </div>
@@ -949,14 +937,14 @@ Pricing UI One End -->
 
 <section id="contact">
   <div class="container">
-    <h2 class="center">Get in Touch</h2>
-    <p class="center padDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h2 class="center">Schedule a Repair</h2>
+    <p class="center padDown">Fill out the form and you will be contacted regarding your inquiry</br> or Call <u>832-275-1007</u> to schedule right away!</p>
     <div class="row">
       <form   action="https://formspree.io/f/mqknyvej"
   method="POST">
         <input type="text" placeholder="Name" name="name" required="">
         <input type="email" placeholder="Email" name="email" required="">
-        <input type="number" placeholder="Telephone" name="number" required="">
+        <input type="number" placeholder="Phone #" name="number" required="">
         <textarea id= "Message"placeholder="Message" name="message" required=""></textarea>
         <input id="sendButton" type="submit" value="Send">
       </form>
@@ -971,11 +959,10 @@ Pricing UI One End -->
   <div class="container">
     <div class="row">
       <div class="col six">
-        <h2>Logo</h2>
-        <p>24 Clarence Road, London, SW12 3RP, United Kingdom</p>
-        <p>Telephone: +44 02890 123456</p>
-        <p>Fax: +44 02890 123456</p>
-        <p>E-mail: <a href="mailto:info@companyname.com">info@companyname.com</a></p>
+
+        <p>5713 Balbo St, Houston, TX 77091</p>
+        <p>Phone: 832-275-1007</p>
+        <p>E-mail: <a href="mailto:Cordarrelw@gmail.com">Cordarrelw@gmail.com</a></p>
       </div>
       <div class="col six">
         <ul>
@@ -987,12 +974,11 @@ Pricing UI One End -->
           <li><a class="smoothscroll" href="#contact">Contact</a></li>
         </ul>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, laborum, ducimus! Ea error, provident enim fugiat fuga magnam quibusdam, a atque, laudantium, harum nobis dolore repudiandae cumque libero optio?</p>
       </div>
     </div>
   </div>
 </footer>
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+    
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
