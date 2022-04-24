@@ -31,6 +31,7 @@ body {
 	color: #212529;
 	background-color: #fff;
 }
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -45,11 +46,12 @@ img {
 
 .container {
 	width: 100%;
-	max-width: 1140px;
+	max-width: 960px;
 	margin: 0 auto;
 	box-sizing: border-box;
-	padding: 0 20px;
+	//padding: 0 20px;
 	position: relative;
+	overflow-x: hidden;
 }
 .row {
 	clear: both;
@@ -116,10 +118,12 @@ img {
 }
 .hide-on-mobile {
 	display: none !important;
-	width: 0;
+	width: 100%;
 	height: 0;
 }
+
 }
+
 .container:after, .row:after {
 	content: "";
 	display: table;
@@ -133,7 +137,7 @@ hr {
 	height: 1px;
 	background: #EEEEEE;
 	clear: both;
-	width: 300px;
+	width: 405px;
 }
 
 /* Typography */
@@ -142,6 +146,7 @@ p {
 	margin-top: 0;
 	margin-bottom: 1rem;
 	line-height: 1.5;
+	font-size: 1.3em;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: inherit;
@@ -170,9 +175,11 @@ h2:after {
 }
 h3 {
 	font-size: 1.5rem;
+	text-align: center;
 }
 h4 {
 	font-size: 1.2rem;
+	text-align: center;
 }
 h5 {
 	font-size: 1.1rem;
@@ -201,7 +208,7 @@ button:hover {
 }
 /* Header */
 header {
-	padding: 20px 0;
+	padding: 20px 12px;
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
@@ -216,8 +223,8 @@ header .logo {
 	color: #FFFFFF;
 	margin-top: 0;
 	position: absolute;
-	top: -10px;
-	font-size: 1.5rem;
+	top: 0px;
+	font-size: 1rem;
 }
 header .mainNav {
 	top: 0px;
@@ -310,7 +317,7 @@ background-color: #001F3F;
 }
 #hero h2 {
 	text-align: center;
-    font-size: 4.6em;
+    font-size: 4.0em;
     text-transform: capitalize;
     margin-top: 0;
     line-height: 1;
@@ -324,7 +331,7 @@ background-color: #001F3F;
 }
 #hero p {
     color: rgb(255,255,255,0.7);
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: normal;
@@ -340,7 +347,7 @@ background-color: #001F3F;
 	color: #fff;
 	height: 50px;
 	line-height: 48px;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	padding: 0 40px;
 	background: #FF4136;
 	display: inline-block;
@@ -387,14 +394,17 @@ background-color: #001F3F;
 }
 #work .work {
 	position: relative;
+	left: -20px;
 	
 }
 #work .work p {
 	text-align: center;
-	font-size: 0.9em;
+	font-size: 1.5em;
 }
 #work .work h4 {
 	color: #FF4136;
+	font-size: 1.6em;
+	text-align:center;
 
 }
 #work .work-overlay {
@@ -411,7 +421,7 @@ background-color: #001F3F;
 	align-items: center;
 	width: 250px;
 	height: auto;
-	padding: 10px;
+	padding: 10px 15px;
 }
 #work .work .work-overlay {
 	opacity: .9;
@@ -419,14 +429,14 @@ background-color: #001F3F;
 }
 #work .work:hover .work-overlay {
 	opacity: 1;
-	transform: scale(1.05);
+	//transform: scale(1.05);
 }
 #work .work {
 	transition: all .4s ease-in-out;
 	
 }
 #work .work:hover {
-	transform: scale(1.05);
+	//transform: scale(1.05);
 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
 }
 
@@ -459,6 +469,7 @@ background-color: #001F3F;
 	float: left;
 	background: #FF4136;
 }
+
 .value-00 {
 	width: 0;
 }
@@ -580,14 +591,14 @@ background-color: #001F3F;
 	background: #F4F4F4;
 	color: #525252;
 	font-family: 'Open Sans';
-	font-size: 18px;
+	font-size: 24px;
 }
 #contact input[type=submit], textarea[type=submit] {
 	border: 0;
 	color: #FFFFFF;
 	height: 50px;
 	line-height: 48px;
-	font-size: 1em;
+	font-size: 1.8em;
 	padding: 0 40px;
 	background: #FF4136;
 	margin-top: 10px;
@@ -605,6 +616,7 @@ background-color: #001F3F;
 }
 #contact textarea {
 	height: 10rem;
+	font-size: 24px;
 }
 /* Footer One */
 
@@ -634,12 +646,13 @@ footer ul li {
 	display: inline;
 	padding-right: 25px;
 	font-weight: 500;
+	font-size: 1.5em;
 }
 
 
 footer p {
 	color: #888888;
-	font-size: 0.8em;
+	font-size: 1.2em;
 	margin: 0;
 }
 footer h2 {
@@ -667,9 +680,13 @@ footer ul li {
 
 .center {
 	text-align: center;
+	font-size: 1.5em;
 }
 .padDown {
 	padding-bottom: 50px;
+}
+#billboard{
+overflow-y: hidden;
 }
 </style>
 
@@ -714,9 +731,9 @@ footer ul li {
 <!-- Hero -->
 s
 <section id="hero">
-  <div class="container">
+  <div id= "billboard" class="container">
     <h2><span class="first" style="opacity: 1;"><strong>Warren's</strong></span> <span class="white first" style="opacity: 1;">Small Engine</br></span> <span class="first" style="opacity: 1;"><strong>Repair Services</strong></span></h2>
-    <p class="second" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Pumps, Hydraulics, Weed Eaters, Lawn Mowers, Pressure Washers, Compressors, Blowers,</br>Small Diesel Engines & More!</p>
+    <p class="second" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Pumps, Hydraulics, Weed Eaters, Lawn Mowers, Pressure Washers, Compressors, Blowers,Small Diesel Engines & More!</p>
     <a href="#contact" class="smoothscroll">
     <div class="button second" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Schedule Service</div>
     </a> </div>
@@ -780,7 +797,7 @@ s
         <div class="work"> <img style = "height: 200px; width: 250px"src="image_26968.jpg" alt="Pumps">
           <div class="work-overlay">
             <h4>Pumps</h4>
-            <p>Hydro Blasting Pumps, Vacuum Pumps, Utility Pumps</p>
+            <p>Hydro Blasting Pumps, Utility Pumps</p>
           </div>
         </div>
       </div>
@@ -835,10 +852,10 @@ s
         </div>
       </div>
       <div class="three col">
-        <div class="work"> <img style = "height: 200px; width: 250px"src="chainsaw.jpg" alt="go-kart">
+        <div class="work"> <img style = "height: 200px; width: 250px"src="chainsaw.jpg" alt="generators">
           <div class="work-overlay">
-            <h4>Any Small Engine!</h4>
-            <p>Go-Karts, Chainsaws, Generators</p>
+            <h4>Small Engines</h4>
+            <p>Chainsaws, Generators</p>
           </div>
         </div>
       </div>
@@ -872,7 +889,7 @@ s
     <div class="row">
       <div class="eight col">
         <h3>Location</h3>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.526472429999!2d-95.45689328488947!3d29.849087181953767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c63d248e1d9f%3A0x494e0fafd7795946!2s5713%20Balbo%20St%2C%20Houston%2C%20TX%2077091!5e0!3m2!1sen!2sus!4v1650552888422!5m2!1sen!2sus" width="100%" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.526472429999!2d-95.45689328488947!3d29.849087181953767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c63d248e1d9f%3A0x494e0fafd7795946!2s5713%20Balbo%20St%2C%20Houston%2C%20TX%2077091!5e0!3m2!1sen!2sus!4v1650552888422!5m2!1sen!2sus" width="100%" height="420px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="four col">
         <h4>Pickup & Delivery</h4>
